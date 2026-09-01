@@ -1,0 +1,2068 @@
+[
+  {
+    "name": "Turmeric Powder",
+    "price": 120,
+    "mrp": 140,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=600&q=80",
+    "description": "Premium quality turmeric powder sourced from the finest farms. Perfect for adding color and flavor to your dishes.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 66,
+        "mrp": 77,
+        "inStock": true,
+        "sku": "TUR-100"
+      },
+      {
+        "pack": "200g",
+        "price": 120,
+        "mrp": 140,
+        "inStock": true,
+        "sku": "TUR-200"
+      },
+      {
+        "pack": "500g",
+        "price": 276,
+        "mrp": 322,
+        "inStock": true,
+        "sku": "TUR-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 516,
+        "mrp": 602,
+        "inStock": true,
+        "sku": "TUR-1k"
+      }
+    ],
+    "defaultVariant": "200g",
+    "tag": "Bestseller",
+    "specifications": {
+      "Origin": "India",
+      "Shelf Life": "12 months",
+      "Storage": "Keep in cool, dry place"
+    }
+  },
+  {
+    "name": "Kashmiri Red Chilli Powder",
+    "price": 150,
+    "mrp": 170,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=600&q=80",
+    "description": "Authentic Kashmiri red chillies known for their vibrant color and mild heat.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 82,
+        "mrp": 94,
+        "inStock": true,
+        "sku": "KRC-100"
+      },
+      {
+        "pack": "200g",
+        "price": 150,
+        "mrp": 170,
+        "inStock": true,
+        "sku": "KRC-200"
+      },
+      {
+        "pack": "500g",
+        "price": 345,
+        "mrp": 391,
+        "inStock": true,
+        "sku": "KRC-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 645,
+        "mrp": 731,
+        "inStock": true,
+        "sku": "KRC-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Coriander Powder",
+    "price": 95,
+    "mrp": 110,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly ground coriander powder with a warm, citrusy aroma, ideal for curries and gravies.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 52,
+        "mrp": 61,
+        "inStock": true,
+        "sku": "COR-100"
+      },
+      {
+        "pack": "200g",
+        "price": 95,
+        "mrp": 110,
+        "inStock": true,
+        "sku": "COR-200"
+      },
+      {
+        "pack": "500g",
+        "price": 218,
+        "mrp": 253,
+        "inStock": true,
+        "sku": "COR-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 408,
+        "mrp": 473,
+        "inStock": true,
+        "sku": "COR-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Garam Masala",
+    "price": 180,
+    "mrp": 210,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+    "description": "A rich blend of aromatic spices roasted and ground to perfection for authentic Indian flavor.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 99,
+        "mrp": 116,
+        "inStock": true,
+        "sku": "GM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 180,
+        "mrp": 210,
+        "inStock": true,
+        "sku": "GM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 414,
+        "mrp": 483,
+        "inStock": true,
+        "sku": "GM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 774,
+        "mrp": 903,
+        "inStock": true,
+        "sku": "GM-1k"
+      }
+    ],
+    "defaultVariant": "200g",
+    "tag": "New"
+  },
+  {
+    "name": "Cumin Seeds",
+    "price": 110,
+    "mrp": 130,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.2,
+    "image": "https://loremflickr.com/600/600/cuminseeds",
+    "description": "Whole cumin seeds with a strong earthy aroma, perfect for tempering and roasting.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 61,
+        "mrp": 72,
+        "inStock": true,
+        "sku": "CUM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 110,
+        "mrp": 130,
+        "inStock": true,
+        "sku": "CUM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 253,
+        "mrp": 299,
+        "inStock": true,
+        "sku": "CUM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 473,
+        "mrp": 559,
+        "inStock": true,
+        "sku": "CUM-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Black Pepper Powder",
+    "price": 220,
+    "mrp": 250,
+    "pack": "100g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/blackpepper",
+    "description": "Finely ground black pepper with a sharp, pungent kick to elevate any dish.",
+    "variants": [
+      {
+        "pack": "50g",
+        "price": 88,
+        "mrp": 100,
+        "inStock": true,
+        "sku": "BPP-50"
+      },
+      {
+        "pack": "100g",
+        "price": 154,
+        "mrp": 175,
+        "inStock": true,
+        "sku": "BPP-100"
+      },
+      {
+        "pack": "200g",
+        "price": 286,
+        "mrp": 325,
+        "inStock": true,
+        "sku": "BPP-200"
+      },
+      {
+        "pack": "500g",
+        "price": 660,
+        "mrp": 750,
+        "inStock": false,
+        "sku": "BPP-500"
+      }
+    ],
+    "defaultVariant": "100g"
+  },
+  {
+    "name": "Mustard Seeds",
+    "price": 70,
+    "mrp": 85,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.3,
+    "image": "https://loremflickr.com/600/600/mustardseeds",
+    "description": "Small pungent mustard seeds used widely in tempering and pickling.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 38,
+        "mrp": 47,
+        "inStock": true,
+        "sku": "MUS-100"
+      },
+      {
+        "pack": "200g",
+        "price": 70,
+        "mrp": 85,
+        "inStock": true,
+        "sku": "MUS-200"
+      },
+      {
+        "pack": "500g",
+        "price": 161,
+        "mrp": 195,
+        "inStock": true,
+        "sku": "MUS-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 301,
+        "mrp": 366,
+        "inStock": false,
+        "sku": "MUS-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Fennel Seeds",
+    "price": 90,
+    "mrp": 105,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/fennelseeds",
+    "description": "Sweet and aromatic fennel seeds, great as a mouth freshener or cooking spice.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 50,
+        "mrp": 58,
+        "inStock": true,
+        "sku": "FEN-100"
+      },
+      {
+        "pack": "200g",
+        "price": 90,
+        "mrp": 105,
+        "inStock": true,
+        "sku": "FEN-200"
+      },
+      {
+        "pack": "500g",
+        "price": 207,
+        "mrp": 241,
+        "inStock": true,
+        "sku": "FEN-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 387,
+        "mrp": 452,
+        "inStock": true,
+        "sku": "FEN-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Green Cardamom Pods",
+    "price": 480,
+    "mrp": 550,
+    "pack": "100g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/cardamom",
+    "description": "Fragrant green cardamom pods that add a sweet, floral note to desserts and chai.",
+    "variants": [
+      {
+        "pack": "50g",
+        "price": 192,
+        "mrp": 220,
+        "inStock": true,
+        "sku": "CAR-50"
+      },
+      {
+        "pack": "100g",
+        "price": 336,
+        "mrp": 385,
+        "inStock": true,
+        "sku": "CAR-100"
+      },
+      {
+        "pack": "200g",
+        "price": 624,
+        "mrp": 715,
+        "inStock": true,
+        "sku": "CAR-200"
+      },
+      {
+        "pack": "500g",
+        "price": 1440,
+        "mrp": 1650,
+        "inStock": false,
+        "sku": "CAR-500"
+      }
+    ],
+    "defaultVariant": "100g",
+    "tag": "Bestseller"
+  },
+  {
+    "name": "Cinnamon Sticks",
+    "price": 160,
+    "mrp": 185,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.2,
+    "image": "https://loremflickr.com/600/600/cinnamon",
+    "description": "Naturally sweet cinnamon quills, hand-rolled and sun-dried for maximum flavor.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 88,
+        "mrp": 102,
+        "inStock": true,
+        "sku": "CIN-100"
+      },
+      {
+        "pack": "200g",
+        "price": 160,
+        "mrp": 185,
+        "inStock": true,
+        "sku": "CIN-200"
+      },
+      {
+        "pack": "500g",
+        "price": 368,
+        "mrp": 425,
+        "inStock": true,
+        "sku": "CIN-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 688,
+        "mrp": 796,
+        "inStock": true,
+        "sku": "CIN-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Cloves",
+    "price": 260,
+    "mrp": 300,
+    "pack": "100g",
+    "category": "Spices",
+    "rating": 4.7,
+    "image": "https://loremflickr.com/600/600/cloves",
+    "description": "Whole cloves with an intense aroma, used in both sweet and savory dishes.",
+    "variants": [
+      {
+        "pack": "50g",
+        "price": 104,
+        "mrp": 120,
+        "inStock": true,
+        "sku": "CLV-50"
+      },
+      {
+        "pack": "100g",
+        "price": 182,
+        "mrp": 210,
+        "inStock": true,
+        "sku": "CLV-100"
+      },
+      {
+        "pack": "200g",
+        "price": 338,
+        "mrp": 390,
+        "inStock": true,
+        "sku": "CLV-200"
+      },
+      {
+        "pack": "500g",
+        "price": 780,
+        "mrp": 900,
+        "inStock": true,
+        "sku": "CLV-500"
+      }
+    ],
+    "defaultVariant": "100g"
+  },
+  {
+    "name": "Bay Leaves",
+    "price": 60,
+    "mrp": 75,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.3,
+    "image": "https://loremflickr.com/600/600/bayleaves",
+    "description": "Dried bay leaves that infuse dishes with a subtle, herbal fragrance.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 33,
+        "mrp": 41,
+        "inStock": true,
+        "sku": "BAY-100"
+      },
+      {
+        "pack": "200g",
+        "price": 60,
+        "mrp": 75,
+        "inStock": true,
+        "sku": "BAY-200"
+      },
+      {
+        "pack": "500g",
+        "price": 138,
+        "mrp": 172,
+        "inStock": true,
+        "sku": "BAY-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 258,
+        "mrp": 322,
+        "inStock": true,
+        "sku": "BAY-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Fenugreek Seeds",
+    "price": 65,
+    "mrp": 80,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/fenugreekseeds",
+    "description": "Slightly bitter fenugreek seeds, a staple in pickles and tempering.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 36,
+        "mrp": 44,
+        "inStock": true,
+        "sku": "FGK-100"
+      },
+      {
+        "pack": "200g",
+        "price": 65,
+        "mrp": 80,
+        "inStock": true,
+        "sku": "FGK-200"
+      },
+      {
+        "pack": "500g",
+        "price": 150,
+        "mrp": 184,
+        "inStock": true,
+        "sku": "FGK-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 280,
+        "mrp": 344,
+        "inStock": true,
+        "sku": "FGK-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Star Anise",
+    "price": 340,
+    "mrp": 390,
+    "pack": "100g",
+    "category": "Spices",
+    "rating": 4.3,
+    "image": "https://loremflickr.com/600/600/staranise",
+    "description": "Star-shaped anise pods with a distinct licorice flavor, used in biryanis and stews.",
+    "variants": [
+      {
+        "pack": "50g",
+        "price": 136,
+        "mrp": 156,
+        "inStock": true,
+        "sku": "SAN-50"
+      },
+      {
+        "pack": "100g",
+        "price": 238,
+        "mrp": 273,
+        "inStock": true,
+        "sku": "SAN-100"
+      },
+      {
+        "pack": "200g",
+        "price": 442,
+        "mrp": 507,
+        "inStock": true,
+        "sku": "SAN-200"
+      },
+      {
+        "pack": "500g",
+        "price": 1020,
+        "mrp": 1170,
+        "inStock": false,
+        "sku": "SAN-500"
+      }
+    ],
+    "defaultVariant": "100g"
+  },
+  {
+    "name": "Nutmeg Whole",
+    "price": 300,
+    "mrp": 340,
+    "pack": "100g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/nutmeg",
+    "description": "Whole nutmeg with a warm, nutty flavor, best grated fresh into dishes and desserts.",
+    "variants": [
+      {
+        "pack": "50g",
+        "price": 120,
+        "mrp": 136,
+        "inStock": true,
+        "sku": "NUT-50"
+      },
+      {
+        "pack": "100g",
+        "price": 210,
+        "mrp": 238,
+        "inStock": true,
+        "sku": "NUT-100"
+      },
+      {
+        "pack": "200g",
+        "price": 390,
+        "mrp": 442,
+        "inStock": true,
+        "sku": "NUT-200"
+      },
+      {
+        "pack": "500g",
+        "price": 900,
+        "mrp": 1020,
+        "inStock": true,
+        "sku": "NUT-500"
+      }
+    ],
+    "defaultVariant": "100g"
+  },
+  {
+    "name": "Asafoetida (Hing)",
+    "price": 180,
+    "mrp": 210,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.7,
+    "image": "https://loremflickr.com/600/600/asafoetida",
+    "description": "Pungent asafoetida resin powder that adds depth to lentils and vegetable dishes.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 99,
+        "mrp": 116,
+        "inStock": true,
+        "sku": "HNG-100"
+      },
+      {
+        "pack": "200g",
+        "price": 180,
+        "mrp": 210,
+        "inStock": true,
+        "sku": "HNG-200"
+      },
+      {
+        "pack": "500g",
+        "price": 414,
+        "mrp": 483,
+        "inStock": true,
+        "sku": "HNG-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 774,
+        "mrp": 903,
+        "inStock": true,
+        "sku": "HNG-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Dry Ginger Powder",
+    "price": 130,
+    "mrp": 150,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.9,
+    "image": "https://loremflickr.com/600/600/gingerpowder",
+    "description": "Sun-dried ginger ground into a fine, spicy-sweet powder.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 72,
+        "mrp": 82,
+        "inStock": true,
+        "sku": "DGP-100"
+      },
+      {
+        "pack": "200g",
+        "price": 130,
+        "mrp": 150,
+        "inStock": true,
+        "sku": "DGP-200"
+      },
+      {
+        "pack": "500g",
+        "price": 299,
+        "mrp": 345,
+        "inStock": true,
+        "sku": "DGP-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 559,
+        "mrp": 645,
+        "inStock": true,
+        "sku": "DGP-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Chaat Masala",
+    "price": 100,
+    "mrp": 120,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/chaatmasala",
+    "description": "Tangy and spicy chaat masala blend, perfect for snacks, fruits, and salads.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 55,
+        "mrp": 66,
+        "inStock": true,
+        "sku": "CHM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 100,
+        "mrp": 120,
+        "inStock": true,
+        "sku": "CHM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 230,
+        "mrp": 276,
+        "inStock": true,
+        "sku": "CHM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 430,
+        "mrp": 516,
+        "inStock": true,
+        "sku": "CHM-1k"
+      }
+    ],
+    "defaultVariant": "200g",
+    "tag": "New"
+  },
+  {
+    "name": "Sambar Powder",
+    "price": 140,
+    "mrp": 160,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/sambarpowder",
+    "description": "A South Indian spice blend roasted with lentils for authentic sambar flavor.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 77,
+        "mrp": 88,
+        "inStock": true,
+        "sku": "SAM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 140,
+        "mrp": 160,
+        "inStock": true,
+        "sku": "SAM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 322,
+        "mrp": 368,
+        "inStock": true,
+        "sku": "SAM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 602,
+        "mrp": 688,
+        "inStock": true,
+        "sku": "SAM-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Rasam Powder",
+    "price": 130,
+    "mrp": 150,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/rasampowder",
+    "description": "Tangy, peppery rasam powder blended with traditional South Indian spices.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 72,
+        "mrp": 82,
+        "inStock": true,
+        "sku": "RAS-100"
+      },
+      {
+        "pack": "200g",
+        "price": 130,
+        "mrp": 150,
+        "inStock": true,
+        "sku": "RAS-200"
+      },
+      {
+        "pack": "500g",
+        "price": 299,
+        "mrp": 345,
+        "inStock": true,
+        "sku": "RAS-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 559,
+        "mrp": 645,
+        "inStock": true,
+        "sku": "RAS-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Pav Bhaji Masala",
+    "price": 115,
+    "mrp": 135,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.2,
+    "image": "https://loremflickr.com/600/600/pavbhaji",
+    "description": "Zesty masala blend crafted for the perfect street-style pav bhaji.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 63,
+        "mrp": 74,
+        "inStock": true,
+        "sku": "PBM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 115,
+        "mrp": 135,
+        "inStock": true,
+        "sku": "PBM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 264,
+        "mrp": 310,
+        "inStock": true,
+        "sku": "PBM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 494,
+        "mrp": 580,
+        "inStock": true,
+        "sku": "PBM-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Kitchen King Masala",
+    "price": 125,
+    "mrp": 145,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/kitchenmasala",
+    "description": "An all-purpose masala blend that enhances curries, gravies, and stir-fries.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 69,
+        "mrp": 80,
+        "inStock": true,
+        "sku": "KKM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 125,
+        "mrp": 145,
+        "inStock": true,
+        "sku": "KKM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 288,
+        "mrp": 334,
+        "inStock": true,
+        "sku": "KKM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 538,
+        "mrp": 624,
+        "inStock": false,
+        "sku": "KKM-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Tandoori Masala",
+    "price": 145,
+    "mrp": 165,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/tandoorimasala",
+    "description": "Smoky, robust tandoori masala for marinating grilled and roasted dishes.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 80,
+        "mrp": 91,
+        "inStock": true,
+        "sku": "TAN-100"
+      },
+      {
+        "pack": "200g",
+        "price": 145,
+        "mrp": 165,
+        "inStock": true,
+        "sku": "TAN-200"
+      },
+      {
+        "pack": "500g",
+        "price": 334,
+        "mrp": 379,
+        "inStock": true,
+        "sku": "TAN-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 624,
+        "mrp": 710,
+        "inStock": false,
+        "sku": "TAN-1k"
+      }
+    ],
+    "defaultVariant": "200g",
+    "tag": "Bestseller"
+  },
+  {
+    "name": "Chicken Masala",
+    "price": 135,
+    "mrp": 155,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/chickenmasala",
+    "description": "A well-balanced spice mix designed specifically for rich chicken curries.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 74,
+        "mrp": 85,
+        "inStock": true,
+        "sku": "CKM-100"
+      },
+      {
+        "pack": "200g",
+        "price": 135,
+        "mrp": 155,
+        "inStock": true,
+        "sku": "CKM-200"
+      },
+      {
+        "pack": "500g",
+        "price": 310,
+        "mrp": 356,
+        "inStock": true,
+        "sku": "CKM-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 580,
+        "mrp": 666,
+        "inStock": false,
+        "sku": "CKM-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Whole Kashmiri Red Chilli",
+    "price": 165,
+    "mrp": 190,
+    "pack": "200g",
+    "category": "Spices",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/driedchilli",
+    "description": "Whole dried Kashmiri chillies prized for their deep red color and mild spice.",
+    "variants": [
+      {
+        "pack": "100g",
+        "price": 91,
+        "mrp": 105,
+        "inStock": true,
+        "sku": "WKC-100"
+      },
+      {
+        "pack": "200g",
+        "price": 165,
+        "mrp": 190,
+        "inStock": true,
+        "sku": "WKC-200"
+      },
+      {
+        "pack": "500g",
+        "price": 379,
+        "mrp": 437,
+        "inStock": true,
+        "sku": "WKC-500"
+      },
+      {
+        "pack": "1kg",
+        "price": 710,
+        "mrp": 817,
+        "inStock": true,
+        "sku": "WKC-1k"
+      }
+    ],
+    "defaultVariant": "200g"
+  },
+  {
+    "name": "Sugarcane Bagasse Plates",
+    "price": 190,
+    "mrp": 220,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.3,
+    "image": "https://loremflickr.com/600/600/bagasseplate",
+    "description": "Sturdy compostable plates made from sugarcane bagasse fibre, microwave and freezer safe.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 105,
+        "mrp": 121,
+        "inStock": true,
+        "sku": "SBP-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 190,
+        "mrp": 220,
+        "inStock": true,
+        "sku": "SBP-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 352,
+        "mrp": 407,
+        "inStock": true,
+        "sku": "SBP-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 646,
+        "mrp": 748,
+        "inStock": true,
+        "sku": "SBP-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "Bestseller"
+  },
+  {
+    "name": "Areca Leaf Plates",
+    "price": 220,
+    "mrp": 250,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.9,
+    "image": "https://loremflickr.com/600/600/arecaleafplate",
+    "description": "100% natural plates pressed from fallen areca palm leaves, fully compostable and chemical-free.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 121,
+        "mrp": 138,
+        "inStock": true,
+        "sku": "ALP-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 220,
+        "mrp": 250,
+        "inStock": true,
+        "sku": "ALP-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 407,
+        "mrp": 462,
+        "inStock": true,
+        "sku": "ALP-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 748,
+        "mrp": 850,
+        "inStock": true,
+        "sku": "ALP-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "New"
+  },
+  {
+    "name": "Paper Food Containers",
+    "price": 350,
+    "mrp": 399,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.6,
+    "image": "/disposables-hero.png",
+    "description": "Grease-resistant paper containers ideal for takeaway meals, fully recyclable.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 193,
+        "mrp": 219,
+        "inStock": true,
+        "sku": "PFC-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 350,
+        "mrp": 399,
+        "inStock": true,
+        "sku": "PFC-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 648,
+        "mrp": 738,
+        "inStock": true,
+        "sku": "PFC-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 1190,
+        "mrp": 1357,
+        "inStock": true,
+        "sku": "PFC-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "Bestseller"
+  },
+  {
+    "name": "Compostable Paper Cups",
+    "price": 140,
+    "mrp": 160,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.7,
+    "image": "https://loremflickr.com/600/600/papercup",
+    "description": "Double-walled compostable paper cups that keep drinks hot without sogging.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 77,
+        "mrp": 88,
+        "inStock": true,
+        "sku": "CPC-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 140,
+        "mrp": 160,
+        "inStock": true,
+        "sku": "CPC-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 259,
+        "mrp": 296,
+        "inStock": true,
+        "sku": "CPC-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 476,
+        "mrp": 544,
+        "inStock": false,
+        "sku": "CPC-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Paper Straws",
+    "price": 90,
+    "mrp": 105,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/paperstraw",
+    "description": "Sturdy, biodegradable paper straws that won't turn soggy mid-drink.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 50,
+        "mrp": 58,
+        "inStock": true,
+        "sku": "PST-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 90,
+        "mrp": 105,
+        "inStock": true,
+        "sku": "PST-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 166,
+        "mrp": 194,
+        "inStock": true,
+        "sku": "PST-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 306,
+        "mrp": 357,
+        "inStock": false,
+        "sku": "PST-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Wooden Cutlery Set",
+    "price": 160,
+    "mrp": 185,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/woodencutlery",
+    "description": "Compostable birchwood spoons, forks, and knives, smooth-finished and splinter-free.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 88,
+        "mrp": 102,
+        "inStock": true,
+        "sku": "WCS-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 160,
+        "mrp": 185,
+        "inStock": true,
+        "sku": "WCS-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 296,
+        "mrp": 342,
+        "inStock": true,
+        "sku": "WCS-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 544,
+        "mrp": 629,
+        "inStock": true,
+        "sku": "WCS-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Banana Leaf Plates",
+    "price": 210,
+    "mrp": 240,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.7,
+    "image": "https://loremflickr.com/600/600/bananaleafplate",
+    "description": "Traditional banana leaf-style plates offering an authentic, eco-friendly dining experience.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 116,
+        "mrp": 132,
+        "inStock": true,
+        "sku": "BLP-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 210,
+        "mrp": 240,
+        "inStock": true,
+        "sku": "BLP-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 388,
+        "mrp": 444,
+        "inStock": true,
+        "sku": "BLP-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 714,
+        "mrp": 816,
+        "inStock": true,
+        "sku": "BLP-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Corn Starch Cutlery",
+    "price": 175,
+    "mrp": 200,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.7,
+    "image": "https://loremflickr.com/600/600/cornstarchcutlery",
+    "description": "Durable cutlery made from plant-based corn starch, a true alternative to plastic.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 96,
+        "mrp": 110,
+        "inStock": true,
+        "sku": "CSC-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 175,
+        "mrp": 200,
+        "inStock": true,
+        "sku": "CSC-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 324,
+        "mrp": 370,
+        "inStock": true,
+        "sku": "CSC-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 595,
+        "mrp": 680,
+        "inStock": true,
+        "sku": "CSC-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "New"
+  },
+  {
+    "name": "Biodegradable Garbage Bags",
+    "price": 130,
+    "mrp": 150,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.2,
+    "image": "https://loremflickr.com/600/600/garbagebag",
+    "description": "Compostable garbage bags that break down naturally without leaving microplastics.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 72,
+        "mrp": 82,
+        "inStock": true,
+        "sku": "BGB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 130,
+        "mrp": 150,
+        "inStock": true,
+        "sku": "BGB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 240,
+        "mrp": 278,
+        "inStock": true,
+        "sku": "BGB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 442,
+        "mrp": 510,
+        "inStock": false,
+        "sku": "BGB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Kraft Paper Bags",
+    "price": 120,
+    "mrp": 140,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/kraftpaperbag",
+    "description": "Recyclable kraft paper carry bags with reinforced handles for everyday use.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 66,
+        "mrp": 77,
+        "inStock": true,
+        "sku": "KPB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 120,
+        "mrp": 140,
+        "inStock": true,
+        "sku": "KPB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 222,
+        "mrp": 259,
+        "inStock": true,
+        "sku": "KPB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 408,
+        "mrp": 476,
+        "inStock": true,
+        "sku": "KPB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Bamboo Toothbrush",
+    "price": 60,
+    "mrp": 75,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.9,
+    "image": "https://loremflickr.com/600/600/bambootoothbrush",
+    "description": "Plastic-free toothbrush with a biodegradable bamboo handle and soft bristles.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 33,
+        "mrp": 41,
+        "inStock": true,
+        "sku": "BTB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 60,
+        "mrp": 75,
+        "inStock": true,
+        "sku": "BTB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 111,
+        "mrp": 139,
+        "inStock": true,
+        "sku": "BTB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 204,
+        "mrp": 255,
+        "inStock": false,
+        "sku": "BTB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "Bestseller"
+  },
+  {
+    "name": "Bagasse Bowls",
+    "price": 200,
+    "mrp": 230,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/bagassebowl",
+    "description": "Leak-resistant bagasse bowls perfect for soups, curries, and salads.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 110,
+        "mrp": 127,
+        "inStock": true,
+        "sku": "BGW-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 200,
+        "mrp": 230,
+        "inStock": true,
+        "sku": "BGW-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 370,
+        "mrp": 426,
+        "inStock": true,
+        "sku": "BGW-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 680,
+        "mrp": 782,
+        "inStock": true,
+        "sku": "BGW-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Compostable Food Wrap",
+    "price": 175,
+    "mrp": 200,
+    "pack": "18m",
+    "category": "Biodegradables",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/beeswaxwrap",
+    "description": "Reusable, compostable food wrap that keeps produce fresh without plastic.",
+    "variants": [
+      {
+        "pack": "12m",
+        "price": 122,
+        "mrp": 140,
+        "inStock": true,
+        "sku": "CFW-12M"
+      },
+      {
+        "pack": "18m",
+        "price": 175,
+        "mrp": 200,
+        "inStock": true,
+        "sku": "CFW-18M"
+      },
+      {
+        "pack": "30m",
+        "price": 280,
+        "mrp": 320,
+        "inStock": true,
+        "sku": "CFW-30M"
+      },
+      {
+        "pack": "50m",
+        "price": 446,
+        "mrp": 510,
+        "inStock": true,
+        "sku": "CFW-50M"
+      }
+    ],
+    "defaultVariant": "18m"
+  },
+  {
+    "name": "Palm Leaf Plates",
+    "price": 230,
+    "mrp": 260,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/palmleafplate",
+    "description": "Elegant, sturdy plates pressed from fallen palm leaves, ideal for events.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 127,
+        "mrp": 143,
+        "inStock": true,
+        "sku": "PLP-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 230,
+        "mrp": 260,
+        "inStock": true,
+        "sku": "PLP-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 426,
+        "mrp": 481,
+        "inStock": true,
+        "sku": "PLP-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 782,
+        "mrp": 884,
+        "inStock": true,
+        "sku": "PLP-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Paper Bowls",
+    "price": 150,
+    "mrp": 175,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/paperbowl",
+    "description": "Sturdy disposable paper bowls, oil and leak resistant for everyday meals.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 82,
+        "mrp": 96,
+        "inStock": true,
+        "sku": "PBW-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 150,
+        "mrp": 175,
+        "inStock": true,
+        "sku": "PBW-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 278,
+        "mrp": 324,
+        "inStock": true,
+        "sku": "PBW-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 510,
+        "mrp": 595,
+        "inStock": true,
+        "sku": "PBW-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Biodegradable Cling Wrap",
+    "price": 145,
+    "mrp": 170,
+    "pack": "18m",
+    "category": "Biodegradables",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/clingwrap",
+    "description": "Plant-based cling film that seals in freshness and breaks down naturally.",
+    "variants": [
+      {
+        "pack": "12m",
+        "price": 102,
+        "mrp": 119,
+        "inStock": true,
+        "sku": "BCW-12M"
+      },
+      {
+        "pack": "18m",
+        "price": 145,
+        "mrp": 170,
+        "inStock": true,
+        "sku": "BCW-18M"
+      },
+      {
+        "pack": "30m",
+        "price": 232,
+        "mrp": 272,
+        "inStock": true,
+        "sku": "BCW-30M"
+      },
+      {
+        "pack": "50m",
+        "price": 370,
+        "mrp": 433,
+        "inStock": true,
+        "sku": "BCW-50M"
+      }
+    ],
+    "defaultVariant": "18m"
+  },
+  {
+    "name": "Bagasse Clamshell Box",
+    "price": 260,
+    "mrp": 300,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.8,
+    "image": "https://loremflickr.com/600/600/clamshellbox",
+    "description": "Compostable clamshell boxes ideal for takeaway meals and bakery items.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 143,
+        "mrp": 165,
+        "inStock": true,
+        "sku": "BCB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 260,
+        "mrp": 300,
+        "inStock": true,
+        "sku": "BCB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 481,
+        "mrp": 555,
+        "inStock": true,
+        "sku": "BCB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 884,
+        "mrp": 1020,
+        "inStock": true,
+        "sku": "BCB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Wooden Ice Cream Spoons",
+    "price": 55,
+    "mrp": 70,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.4,
+    "image": "https://loremflickr.com/600/600/woodenspoon",
+    "description": "Compact, splinter-free wooden spoons perfect for ice cream and desserts.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 30,
+        "mrp": 38,
+        "inStock": true,
+        "sku": "WIS-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 55,
+        "mrp": 70,
+        "inStock": true,
+        "sku": "WIS-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 102,
+        "mrp": 130,
+        "inStock": true,
+        "sku": "WIS-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 187,
+        "mrp": 238,
+        "inStock": true,
+        "sku": "WIS-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Jute Bags",
+    "price": 190,
+    "mrp": 220,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/jutebag",
+    "description": "Durable, reusable jute bags that make a stylish, plastic-free shopping companion.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 105,
+        "mrp": 121,
+        "inStock": true,
+        "sku": "JUT-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 190,
+        "mrp": 220,
+        "inStock": true,
+        "sku": "JUT-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 352,
+        "mrp": 407,
+        "inStock": true,
+        "sku": "JUT-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 646,
+        "mrp": 748,
+        "inStock": true,
+        "sku": "JUT-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50",
+    "tag": "New"
+  },
+  {
+    "name": "Compostable Trash Bags",
+    "price": 165,
+    "mrp": 190,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.2,
+    "image": "https://loremflickr.com/600/600/compostbag",
+    "description": "Certified compostable trash bags for kitchen and garden waste.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 91,
+        "mrp": 105,
+        "inStock": true,
+        "sku": "CTB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 165,
+        "mrp": 190,
+        "inStock": true,
+        "sku": "CTB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 305,
+        "mrp": 352,
+        "inStock": true,
+        "sku": "CTB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 561,
+        "mrp": 646,
+        "inStock": false,
+        "sku": "CTB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Bagasse Trays",
+    "price": 175,
+    "mrp": 200,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/bagassetray",
+    "description": "Sturdy compostable trays great for meal prep and food service.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 96,
+        "mrp": 110,
+        "inStock": true,
+        "sku": "BGT-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 175,
+        "mrp": 200,
+        "inStock": true,
+        "sku": "BGT-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 324,
+        "mrp": 370,
+        "inStock": true,
+        "sku": "BGT-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 595,
+        "mrp": 680,
+        "inStock": false,
+        "sku": "BGT-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Colored Paper Straws",
+    "price": 95,
+    "mrp": 115,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/colorstraws",
+    "description": "Vibrant, food-safe paper straws that add a fun touch to any drink.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 52,
+        "mrp": 63,
+        "inStock": true,
+        "sku": "CPS-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 95,
+        "mrp": 115,
+        "inStock": true,
+        "sku": "CPS-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 176,
+        "mrp": 213,
+        "inStock": true,
+        "sku": "CPS-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 323,
+        "mrp": 391,
+        "inStock": true,
+        "sku": "CPS-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Areca Leaf Bowls",
+    "price": 235,
+    "mrp": 265,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.5,
+    "image": "https://loremflickr.com/600/600/arecaleafbowl",
+    "description": "Natural areca leaf bowls, sturdy enough for curries and wet food items.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 129,
+        "mrp": 146,
+        "inStock": true,
+        "sku": "ALB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 235,
+        "mrp": 265,
+        "inStock": true,
+        "sku": "ALB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 435,
+        "mrp": 490,
+        "inStock": true,
+        "sku": "ALB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 799,
+        "mrp": 901,
+        "inStock": false,
+        "sku": "ALB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Biodegradable Cup Lids",
+    "price": 110,
+    "mrp": 130,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.6,
+    "image": "https://loremflickr.com/600/600/cuplid",
+    "description": "Plant-fibre lids designed to fit compostable cups snugly and securely.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 61,
+        "mrp": 72,
+        "inStock": true,
+        "sku": "BCL-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 110,
+        "mrp": 130,
+        "inStock": true,
+        "sku": "BCL-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 204,
+        "mrp": 240,
+        "inStock": true,
+        "sku": "BCL-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 374,
+        "mrp": 442,
+        "inStock": true,
+        "sku": "BCL-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  },
+  {
+    "name": "Cotton Produce Bags",
+    "price": 180,
+    "mrp": 205,
+    "pack": "Pack of 50",
+    "category": "Biodegradables",
+    "rating": 4.8,
+    "image": "https://loremflickr.com/600/600/cottonbag",
+    "description": "Washable, reusable cotton mesh bags for fruits, vegetables, and bulk shopping.",
+    "variants": [
+      {
+        "pack": "Pack of 25",
+        "price": 99,
+        "mrp": 113,
+        "inStock": true,
+        "sku": "CPB-Pack"
+      },
+      {
+        "pack": "Pack of 50",
+        "price": 180,
+        "mrp": 205,
+        "inStock": true,
+        "sku": "CPB-Pack"
+      },
+      {
+        "pack": "Pack of 100",
+        "price": 333,
+        "mrp": 379,
+        "inStock": true,
+        "sku": "CPB-Pack"
+      },
+      {
+        "pack": "Pack of 200",
+        "price": 612,
+        "mrp": 697,
+        "inStock": true,
+        "sku": "CPB-Pack"
+      }
+    ],
+    "defaultVariant": "Pack of 50"
+  }
+]
