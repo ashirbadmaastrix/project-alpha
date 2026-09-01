@@ -7,6 +7,8 @@ const adminMiddleware = require("../middlewares/adminMiddleware");
 
 router.get(
   "/overview",
+  authMiddleware,
+  adminMiddleware,
   dashboardController.getDashboardOverview
 );
 
