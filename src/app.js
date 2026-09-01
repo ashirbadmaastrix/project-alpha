@@ -16,6 +16,7 @@ const bulkOrderRoutes = require("./routes/bulkOrderRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const featureProductRoutes = require("./routes/featureProductRoutes")
 const faqRoutes = require("./routes/faqRoutes")
+const dashboardRoutes = require("./routes/dashboardRoutes")
 
 const cors = require("cors");
 
@@ -85,5 +86,6 @@ app.use("/api/v1/search",searchRoutes)
 app.use("/api/v1/bulk-orders",bulkOrderRoutes);
 app.use("/api/v1/orders", orderRoutes);
 app.use("/api/v1/faqs", faqRoutes);
+app.use("/api/v1/dashboard", dashboardRoutes);
 
 module.exports = app;
