@@ -1,45 +1,28 @@
-const path = require("path");
-const fs = require("fs");
+const { pool: db } = require("../config/db");
 
-const dataPath = path.join(__dirname, "../data/data.json");
+const searchProducts = async (search) => {
+    const query = search.trim();
+    const likeQuery = `%${query}%`;
+    const startsWithQuery = `${query}%`;
 
-const getProducts = () => {
-    try {
-        const data = fs.readFileSync(dataPath, "utf-8");
+    const [rows] = await db.execute(
+        `SELECT
+            p.*,
+            c.name AS category_name,
+            w.qty AS weight_value
+         FROM pa_products p
+         LEFT JOIN pa_categories c ON p.category_id = c.id
+         LEFT JOIN pa_weights w ON p.weight_id = w.id
+         WHERE p.prod_name LIKE ?
+         ORDER BY
+            CASE WHEN p.prod_name LIKE ? THEN 0 ELSE 1 END,
+            p.prod_name ASC`,
+        [likeQuery, startsWithQuery]
+    );
 
-        return JSON.parse(data);
-    } catch (error) {
-        console.error("Error reading data.json:", error);
-        return [];
-    }
-};
-
-const searchProducts = (search) => {
-    const products = getProducts();
-
-    const query = search.trim().toLowerCase();
-
-    if (!query) {
-        return [];
-    }
-
-    const startsWith = [];
-    const contains = [];
-
-    products.forEach((product) => {
-        const name = product.name?.toLowerCase() || "";
-
-        if (name.startsWith(query)) {
-            startsWith.push(product);
-        } else if (name.includes(query)) {
-            contains.push(product);
-        }
-    });
-
-    return [...startsWith, ...contains];
+    return rows;
 };
 
 module.exports = {
-    getProducts,
     searchProducts
 };

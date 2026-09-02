@@ -11,7 +11,7 @@ const searchProducts = async (req, res) => {
             });
         }
 
-        const products = productModel.searchProducts(q);
+        const products = await productModel.searchProducts(q);
 
         return res.status(200).json({
             success: true,
