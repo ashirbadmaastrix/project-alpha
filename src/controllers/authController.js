@@ -63,6 +63,37 @@ const adminLogin = async (req, res) => {
       });
     }
 
+    // if (
+    //   email === "abc@gmail.com" &&
+    //   password === "mudebini"
+    // ) {
+    //   const token = jwt.sign(
+    //     {
+    //       id: "123",
+    //       email: process.env.ADMIN_LOGIN_EMAIL,
+    //       role: "admin",
+    //     },
+    //     process.env.JWT_SECRET,
+    //     {
+    //       expiresIn: "1d",
+    //     }
+    //   );
+
+    //   return res.status(200).json({
+    //     success: true,
+    //     message: "Admin login successful",
+    //     token,
+    //     data: {
+    //       id: "123",
+    //       name: "Admin",
+    //       email: process.env.ADMIN_LOGIN_EMAIL,
+    //       role: "admin",
+    //     },
+    //   });
+    // }
+
+
+
     const admin = await adminModel.findAdminByEmail(email);
 
     if (!admin) {
