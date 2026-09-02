@@ -25,6 +25,7 @@ const createProduct = async (productData) => {
         category_id,
         weight,
         prod_name,
+        prod_description,
         regular_price,
         current_price,
         mrp,
@@ -40,6 +41,7 @@ const createProduct = async (productData) => {
             weight_id,
             weight_qty,
             prod_name,
+            prod_description,
             regular_price,
             current_price,
             mrp,
@@ -47,12 +49,13 @@ const createProduct = async (productData) => {
             current_stock,
             img
         )
-        SELECT ?, w.id, w.qty, ?, ?, ?, ?, ?, ?, ?
+        SELECT ?, w.id, w.qty, ?, ?, ?, ?, ?, ?, ?, ?
         FROM pa_weights w
         WHERE w.id = ?`,
         [
             category_id,
             prod_name,
+            prod_description || null,
             regular_price,
             current_price,
             mrp,
@@ -109,6 +112,7 @@ const updateProduct = async (id, productData) => {
         category_id,
         weight_id,
         prod_name,
+        prod_description,
         regular_price,
         current_price,
         mrp,
@@ -125,10 +129,12 @@ const updateProduct = async (id, productData) => {
             p.weight_id = w.id,
             p.weight_qty = w.qty,
             p.prod_name = ?,
+            p.prod_description = ?,
             p.regular_price = ?,
             p.current_price = ?,
             p.mrp = ?,
             p.availability = ?,
+            p.current_stock = ?,
             p.img = ?,
             p.updated_at = CURRENT_TIMESTAMP
         WHERE p.id = ?`,
@@ -136,6 +142,7 @@ const updateProduct = async (id, productData) => {
             weight_id,
             category_id,
             prod_name,
+            prod_description || null,
             regular_price,
             current_price,
             mrp,
