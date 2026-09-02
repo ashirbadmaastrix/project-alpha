@@ -11,6 +11,7 @@ const Category = {
         parent_category,
         img_path,
         status,
+        (SELECT COUNT(*) FROM pa_products p WHERE p.category_id = pa_categories.id) AS product_count,
         created_at,
         updated_at
        FROM pa_categories
@@ -29,6 +30,7 @@ const Category = {
         parent_category,
         img_path,
         status,
+        (SELECT COUNT(*) FROM pa_products p WHERE p.category_id = pa_categories.id) AS product_count,
         created_at,
         updated_at
        FROM pa_categories
