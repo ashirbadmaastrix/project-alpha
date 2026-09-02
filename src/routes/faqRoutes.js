@@ -10,10 +10,12 @@ const {
     deleteFAQ,
     updateFAQStatus
 } = require("../controllers/faqController");
+const authMiddleware = require("../middlewares/authMiddleware");
+const adminMiddleware = require("../middlewares/adminMiddleware");
 
 
 // Create FAQ
-router.post("/", createFAQ);
+router.post("/",authMiddleware,adminMiddleware, createFAQ);
 
 // Get all FAQs
 router.get("/", getAllFAQs);
@@ -22,13 +24,13 @@ router.get("/", getAllFAQs);
 router.get("/:id", getFAQById);
 
 // Update FAQ
-router.put("/:id", updateFAQ);
+router.put("/:id", authMiddleware, adminMiddleware, updateFAQ);
 
 // Delete FAQ
-router.delete("/:id", deleteFAQ);
+router.delete("/:id", authMiddleware, adminMiddleware, deleteFAQ);
 
 // Update status
-router.patch("/:id/status", updateFAQStatus);
+router.patch("/:id/status", authMiddleware, adminMiddleware, updateFAQStatus);
 
 
 module.exports = router;

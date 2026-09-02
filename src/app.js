@@ -28,7 +28,8 @@ const allowedOrigins = [
     "http://localhost:3000",
     "http://localhost:5173",
     "https://project-alpha-demo.vercel.app",
-    "https://project-alpha-new.vercel.app"
+    "https://project-alpha-new.vercel.app",
+    "https://alpha-dashboard-navy.vercel.app"
 ];
 
 app.use(

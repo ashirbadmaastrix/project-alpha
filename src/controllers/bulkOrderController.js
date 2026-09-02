@@ -104,7 +104,6 @@ const getBulkOrder = async (req, res) => {
     }
 };
 
-
 // Update bulk order
 const updateBulkOrder = async (req, res) => {
     try {
@@ -170,7 +169,6 @@ const updateBulkOrder = async (req, res) => {
     }
 };
 
-
 // Submit bulk order
 const submitBulkOrder = async (req, res) => {
     try {
@@ -207,6 +205,15 @@ const submitBulkOrder = async (req, res) => {
         const bulkOrder =
             await bulkOrderModel.getBulkOrderBySessionId(session_id);
 
+            await NotificationService.createNotification({
+                     user_id: 'user_123',
+                        title: 'Order placed',
+                    message: 'Your order has been successfully placed.',
+                    type: 'order',
+                    reference_id: 'ORD-1001',
+                     reference_type: 'bulk-order'
+                        });
+
         return res.status(200).json({
             success: true,
             message: "Bulk order submitted successfully",
@@ -224,7 +231,6 @@ const submitBulkOrder = async (req, res) => {
         });
     }
 };
-
 
 // Cancel bulk order
 const cancelBulkOrder = async (req, res) => {
@@ -269,7 +275,6 @@ const cancelBulkOrder = async (req, res) => {
     }
 };
 
-
 // Get all bulk orders
 const getAllBulkOrders = async (req, res) => {
     try {
@@ -294,7 +299,6 @@ const getAllBulkOrders = async (req, res) => {
         });
     }
 };
-
 
 module.exports = {
     createBulkOrder,
