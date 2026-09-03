@@ -21,7 +21,8 @@ const getOrderItems = async (bulkOrderId) => {
 
             boi.product_id,
             p.prod_name AS product_name,
-
+            p.prod_description AS product_description,
+            p.img AS product_img,
             boi.category_id,
             c.name AS category_name,
 

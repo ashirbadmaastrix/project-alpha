@@ -5,7 +5,8 @@ const {
     getProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getProductsByCategoryId
 } = require("../controllers/productController");
 const upload = require("../middlewares/uploadMiddleware");
 const authMiddleware = require("../middlewares/authMiddleware");
@@ -31,6 +32,11 @@ router.get(
 router.get(
     "/:id",
     getProductById
+);
+
+router.get(
+    "/category/:categoryId",
+    getProductsByCategoryId
 );
 
 // Update Product

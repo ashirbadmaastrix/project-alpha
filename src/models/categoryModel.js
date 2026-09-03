@@ -2,6 +2,68 @@ const { pool: db } = require("../config/db");
 
 
 const Category = {
+  // Get categories without a parent category
+  getRootCategories: async () => {
+    const [rows] = await db.execute(
+      `SELECT
+        id,
+        name,
+        parent_category,
+        img_path,
+        status,
+        (SELECT COUNT(*) FROM pa_products p WHERE p.category_id = pa_categories.id) AS product_count,
+        created_at,
+        updated_at
+       FROM pa_categories
+       WHERE parent_category IS NULL
+       ORDER BY id DESC`
+    );
+
+    return rows;
+  },
+
+  // Get categories by parent category
+  getByParentCategory: async (parentCategoryName) => {
+    const [rows] = await db.execute(
+      `SELECT
+        id,
+        name,
+        parent_category,
+        img_path,
+        status,
+        (SELECT COUNT(*) FROM pa_products p WHERE p.category_id = pa_categories.id) AS product_count,
+        created_at,
+        updated_at
+       FROM pa_categories
+       WHERE parent_category = ?
+       ORDER BY id DESC`,
+      [parentCategoryName]
+    );
+
+    return rows;
+  },
+
+  // Get a category by name
+  getByName: async (name) => {
+    const [rows] = await db.execute(
+      `SELECT
+        id,
+        name,
+        parent_category,
+        img_path,
+        status,
+        (SELECT COUNT(*) FROM pa_products p WHERE p.category_id = pa_categories.id) AS product_count,
+        created_at,
+        updated_at
+       FROM pa_categories
+       WHERE name = ?
+       LIMIT 1`,
+      [name]
+    );
+
+    return rows[0];
+  },
+
   // Get all categories
   getAll: async () => {
     const [rows] = await db.execute(

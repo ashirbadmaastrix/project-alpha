@@ -166,6 +166,26 @@ const deleteProduct = async (id) => {
     return result;
 };
 
+const getProductsByCategoryId = async (categoryId) => {
+    const [rows] = await db.execute(
+        `SELECT
+            p.*,
+            c.name AS category_name,
+            w.qty AS weight_value
+        FROM pa_products p
+        LEFT JOIN pa_categories c 
+            ON p.category_id = c.id
+        LEFT JOIN pa_weights w
+
+            ON p.weight_id = w.id
+        WHERE p.category_id = ?
+        ORDER BY p.id DESC`,
+        [categoryId]
+    );
+
+    return rows;
+}
+
 module.exports = {
     createSlug,
     findProductBySlug,
@@ -173,5 +193,6 @@ module.exports = {
     getAllProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getProductsByCategoryId
 };

@@ -173,14 +173,15 @@ const updateProduct = async (req, res) => {
         }
 
         await Product.updateProduct(id, {
-            category_id,
-            weight_id,
-            prod_name,
-            prod_description,
-            regular_price,
-            current_price,
-            mrp,
-            availability,
+            category_id: category_id ?? existingProduct.category_id,
+            weight_id: weight_id ?? existingProduct.weight_id,
+            prod_name: prod_name ?? existingProduct.prod_name,
+            prod_description: prod_description ?? existingProduct.prod_description,
+            regular_price: regular_price ?? existingProduct.regular_price,
+            current_price: current_price ?? existingProduct.current_price,
+            mrp: mrp ?? existingProduct.mrp,
+            availability: availability ?? existingProduct.availability,
+            current_stock: current_stock ?? existingProduct.current_stock,
             img: images
         });
 
@@ -230,10 +231,42 @@ const deleteProduct = async (req, res) => {
     }
 };
 
+const getProductsByCategoryId = async (req, res) => {
+    const { categoryId } = req.params;
+
+    try {
+        const products = await Product.getProductsByCategoryId(categoryId);
+        if (!products || products.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No products found for this category"
+            });
+        }
+
+        const formattedProducts = products.map(product => ({
+            ...product,
+            img: product.img ? JSON.parse(product.img) : []
+        }));
+
+        return res.status(200).json({
+            success: true,
+            data: formattedProducts
+        });
+
+    } catch (error) {
+        console.error("Get Products by Category ID Error:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Failed to fetch products"
+        });
+    }
+};
+
 module.exports = {
     createProduct,
     getProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getProductsByCategoryId
 };

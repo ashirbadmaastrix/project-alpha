@@ -7,6 +7,8 @@ const {
   updateCategory,
   deleteCategory,
   createSubCategory,
+  getRootCategories,
+  getCategoriesByParent,
 } = require("../controllers/categoryController");
 const adminMiddleware = require("../middlewares/adminMiddleware");
 const upload = require("../middlewares/uploadMiddleware");
@@ -16,6 +18,12 @@ const router = express.Router();
 
 // GET /api/categories
 router.get("/", getCategories);
+
+// GET /api/categories/root
+router.get("/root", getRootCategories);
+
+// GET /api/categories/parent/:parentCategory
+router.get("/parent/:parentCategory", getCategoriesByParent);
 
 // GET /api/categories/:id
 router.get("/:id", getCategoryById);

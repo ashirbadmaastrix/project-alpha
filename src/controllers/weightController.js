@@ -52,7 +52,7 @@ const getWeightById = async (req, res) => {
 // Create weight
 const createWeight = async (req, res) => {
   try {
-    const { qty, status } = req.body;
+    const { qty, status } = req.body || {};
 
     // Validate quantity
     if (qty === undefined || qty === null || qty === "") {
@@ -96,7 +96,7 @@ const createWeight = async (req, res) => {
 const updateWeight = async (req, res) => {
   try {
     const { id } = req.params;
-    const { qty, status } = req.body;
+    const { qty, status } = req.body || {};
 
     const existingWeight = await Weight.getById(id);
 
@@ -114,22 +114,22 @@ const updateWeight = async (req, res) => {
       });
     }
 
-    if (Number(qty) <= 0) {
-      return res.status(400).json({
-        success: false,
-        message: "Quantity must be greater than 0",
-      });
-    }
+    // if (Number(qty) <= 0) {
+    //   return res.status(400).json({
+    //     success: false,
+    //     message: "Quantity must be greater than 0",
+    //   });
+    // }
 
-    if (status !== undefined && ![0, 1].includes(Number(status))) {
-      return res.status(400).json({
-        success: false,
-        message: "Status must be either 0 or 1",
-      });
-    }
+    // if (status !== undefined && ![0, 1].includes(Number(status))) {
+    //   return res.status(400).json({
+    //     success: false,
+    //     message: "Status must be either 0 or 1",
+    //   });
+    // }
 
     await Weight.update(id, {
-      qty: Number(qty),
+      qty: qty,
       status:
         status !== undefined
           ? Number(status)

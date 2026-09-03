@@ -1,5 +1,54 @@
 const Category = require("../models/categoryModel");
 
+// Get categories without a parent category
+const getRootCategories = async (req, res) => {
+  try {
+    const categories = await Category.getRootCategories();
+
+    return res.status(200).json({
+      success: true,
+      message: "Root categories fetched successfully",
+      data: categories,
+    });
+  } catch (error) {
+    console.error("Get root categories error:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch root categories",
+    });
+  }
+};
+
+// Get categories by parent category
+const getCategoriesByParent = async (req, res) => {
+  try {
+    const parentCategory = req.params.parentCategory;
+
+    if (!parentCategory || !parentCategory.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: "Parent category name is required",
+      });
+    }
+
+    const categories = await Category.getByParentCategory(parentCategory.trim());
+
+    return res.status(200).json({
+      success: true,
+      message: "Categories fetched successfully",
+      data: categories,
+    });
+  } catch (error) {
+    console.error("Get categories by parent error:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch categories by parent category",
+    });
+  }
+};
+
 // Get all categories
 const getCategories = async (req, res) => {
   try {
@@ -69,7 +118,7 @@ const createCategory = async (req, res) => {
       name: name.trim(),
       parent_category:
         parent_category !== undefined && parent_category !== ""
-          ? Number(parent_category)
+          ? String(parent_category).trim()
           : null,
       img_path, 
       status: status !== undefined ? Number(status) : 1,
@@ -127,7 +176,7 @@ const updateCategory = async (req, res) => {
         parent_category !== undefined
           ? parent_category === "" || parent_category === null
             ? null
-            : Number(parent_category)
+            : String(parent_category).trim()
           : existingCategory.parent_category,
       img_path,
       status:
@@ -209,17 +258,17 @@ const createSubCategory = async (req, res) => {
       });
     }
 
-    const parentCategoryId = Number(parent_category);
+    const parentCategoryName = String(parent_category).trim();
 
-    if (isNaN(parentCategoryId)) {
+    if (!parentCategoryName) {
       return res.status(400).json({
         success: false,
-        message: "Invalid parent category ID",
+        message: "Invalid parent category name",
       });
     }
 
     // Check parent category exists
-    const parentCategory = await Category.getById(parentCategoryId);
+    const parentCategory = await Category.getByName(parentCategoryName);
 
     if (!parentCategory) {
       return res.status(404).json({
@@ -244,7 +293,7 @@ const createSubCategory = async (req, res) => {
     // Create subcategory
     const subCategoryId = await Category.createSubCategory({
       name: name.trim(),
-      parent_category: parentCategoryId,
+      parent_category: parentCategoryName,
       img_path,
       status: status !== undefined ? Number(status) : 1,
     });
@@ -275,5 +324,7 @@ module.exports = {
   createCategory,
   updateCategory,
   deleteCategory,
-  createSubCategory
+  createSubCategory,
+  getRootCategories,
+  getCategoriesByParent,
 };

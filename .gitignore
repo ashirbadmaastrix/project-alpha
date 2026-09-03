@@ -18,6 +18,7 @@ pnpm-debug.log*
 
 # Runtime data
 pids/
+src/uploads/
 *.pid
 *.seed
 *.pid.lock
