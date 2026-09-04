@@ -23,12 +23,16 @@ const createProduct = async (req, res) => {
         }
 
         const productSlug = Product.createSlug(prod_name);
-        const existingProduct = await Product.findProductBySlug(productSlug);
+        const existingProduct = await Product.findProductBySlug(
+            productSlug,
+            category_id,
+            weight
+        );
 
         if (existingProduct) {
             return res.status(409).json({
                 success: false,
-                message: "Already have product with this name"
+                message: "Already have product with this name, category and weight"
             });
         }
 
@@ -81,10 +85,34 @@ const getProducts = async (req, res) => {
     try {
         const products = await Product.getAllProducts();
 
-        const formattedProducts = products.map(product => ({
-            ...product,
-            img: product.img ? JSON.parse(product.img) : []
-        }));
+        const productMap = new Map();
+
+        products.forEach(product => {
+            const productKey = `${Product.createSlug(product.prod_name)}-${product.category_id}`;
+            const weight = {
+                weight_id: product.weight_id,
+                weight_value: product.weight_value,
+                regular_price: product.regular_price,
+                current_price: product.current_price,
+                mrp: product.mrp,
+                availability: product.availability,
+                current_stock: product.current_stock
+            };
+            const existingProduct = productMap.get(productKey);
+
+            if (existingProduct) {
+                existingProduct.weights.push(weight);
+                return;
+            }
+
+            productMap.set(productKey, {
+                ...product,
+                img: product.img ? JSON.parse(product.img) : [],
+                weights: [weight]
+            });
+        });
+
+        const formattedProducts = [...productMap.values()];
 
         return res.status(200).json({
             success: true,
@@ -115,9 +143,15 @@ const getProductById = async (req, res) => {
             });
         }
 
+        const variants = await Product.getProductVariants(
+            product.prod_name,
+            product.category_id
+        );
+
         product.img = product.img
             ? JSON.parse(product.img)
             : [];
+        product.weights = variants;
 
         return res.status(200).json({
             success: true,

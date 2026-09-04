@@ -7,13 +7,15 @@ const createSlug = (value) => value
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-const findProductBySlug = async (slug) => {
+const findProductBySlug = async (slug, categoryId, weightId) => {
     const [rows] = await db.execute(
         `SELECT id, prod_name
          FROM pa_products
          WHERE LOWER(TRIM(BOTH '-' FROM REGEXP_REPLACE(TRIM(prod_name), '[^[:alnum:]]+', '-'))) = ?
+           AND category_id = ?
+           AND weight_id = ?
          LIMIT 1`,
-        [slug]
+        [slug, categoryId, weightId]
     );
 
     return rows[0];
@@ -106,6 +108,28 @@ const getProductById = async (id) => {
     return rows[0];
 };
 
+const getProductVariants = async (prodName, categoryId) => {
+    const [rows] = await db.execute(
+        `SELECT
+            p.weight_id,
+            w.qty AS weight_value,
+            p.regular_price,
+            p.current_price,
+            p.mrp,
+            p.availability,
+            p.current_stock
+        FROM pa_products p
+        LEFT JOIN pa_weights w
+            ON p.weight_id = w.id
+        WHERE LOWER(TRIM(BOTH '-' FROM REGEXP_REPLACE(TRIM(p.prod_name), '[^[:alnum:]]+', '-'))) = ?
+          AND p.category_id = ?
+        ORDER BY p.id DESC`,
+        [createSlug(prodName), categoryId]
+    );
+
+    return rows;
+};
+
 // Update Product
 const updateProduct = async (id, productData) => {
     const {
@@ -192,6 +216,7 @@ module.exports = {
     createProduct,
     getAllProducts,
     getProductById,
+    getProductVariants,
     updateProduct,
     deleteProduct,
     getProductsByCategoryId
