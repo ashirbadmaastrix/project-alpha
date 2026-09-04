@@ -2,6 +2,148 @@ const userModel = require("../models/userModel");
 const { sendPasswordResetEmail, } = require("../config/mail");
 const bcrypt = require("bcrypt")
 
+const getUserProfile = async (req, res) => {
+    try {
+        const userId = req.user.user_id;
+        const user = await userModel.getProfileById(userId);
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found",
+            });
+        }
+
+        let parsedAddress = null;
+        if (user.address) {
+            try {
+                parsedAddress = JSON.parse(user.address);
+            } catch (error) {
+                parsedAddress = user.address;
+            }
+        }
+
+        let parsedWishlist = [];
+        if (user.wishlist) {
+            try {
+                parsedWishlist = JSON.parse(user.wishlist);
+            } catch (error) {
+                parsedWishlist = user.wishlist;
+            }
+        }
+
+        return res.status(200).json({
+            success: true,
+            message: "User profile fetched successfully",
+            data: {
+                user_id: user.user_id,
+                name: user.name,
+                email: user.email,
+                verified: user.verified,
+                status: user.status,
+                address: parsedAddress,
+                wishlist: Array.isArray(parsedWishlist) ? parsedWishlist : [parsedWishlist].filter(Boolean),
+                created_at: user.created_at,
+                updated_at: user.updated_at,
+            },
+        });
+    } catch (error) {
+        console.error("Get User Profile Error:", error);
+
+        return res.status(500).json({
+            success: false,
+            message: "Internal server error",
+        });
+    }
+};
+
+const updateUserProfile = async (req, res) => {
+    try {
+        const userId = req.user.user_id;
+        const { name, email } = req.body;
+
+        if (!name && !email) {
+            return res.status(400).json({
+                success: false,
+                message: "At least one field is required: name or email",
+            });
+        }
+
+        const currentUser = await userModel.getProfileById(userId);
+        if (!currentUser) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found",
+            });
+        }
+
+        const updatedName = name !== undefined ? String(name).trim() : currentUser.name;
+        const updatedEmail = email !== undefined ? String(email).trim() : currentUser.email;
+
+        if (!updatedName) {
+            return res.status(400).json({
+                success: false,
+                message: "Name is required",
+            });
+        }
+
+        if (!updatedEmail) {
+            return res.status(400).json({
+                success: false,
+                message: "Email is required",
+            });
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(updatedEmail)) {
+            return res.status(400).json({
+                success: false,
+                message: "Please enter a valid email address",
+            });
+        }
+
+        if (updatedEmail !== currentUser.email) {
+            const existingUser = await userModel.findUserByEmail(updatedEmail);
+            if (existingUser && existingUser.user_id !== userId) {
+                return res.status(409).json({
+                    success: false,
+                    message: "Email already in use",
+                });
+            }
+        }
+
+        await userModel.updateProfile(userId, {
+            name: updatedName,
+            email: updatedEmail,
+        });
+
+        const updatedUser = await userModel.getProfileById(userId);
+
+        return res.status(200).json({
+            success: true,
+            message: "Profile updated successfully",
+            data: {
+                user_id: updatedUser.user_id,
+                name: updatedUser.name,
+                email: updatedUser.email,
+                verified: updatedUser.verified,
+                status: updatedUser.status,
+                address: updatedUser.address,
+                wishlist: updatedUser.wishlist,
+                created_at: updatedUser.created_at,
+                updated_at: updatedUser.updated_at,
+            },
+        });
+    } catch (error) {
+        console.error("Update User Profile Error:", error);
+
+        return res.status(500).json({
+            success: false,
+            message: "Internal server error",
+        });
+    }
+};
+
 const updateWishlist = async (req, res) => {
     try {
         const userId = req.user.user_id;
@@ -362,6 +504,8 @@ const addAddress = async (req, res) => {
 };
 
 module.exports = {
+    getUserProfile,
+    updateUserProfile,
     updateWishlist,
     userChangePassword,
     userResetPassword,

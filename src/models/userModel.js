@@ -36,6 +36,28 @@ const User = {
  
         return rows.length > 0 ? rows[0] : null;
     },
+
+    async getProfileById(userId) {
+        const [rows] = await db.query(
+            `SELECT
+        user_id,
+        name,
+        email,
+        verification_code,
+        verified,
+        status,
+        address,
+        wishlist,
+        created_at,
+        updated_at
+       FROM pa_users
+       WHERE user_id = ?
+       LIMIT 1`,
+            [userId]
+        );
+
+        return rows.length > 0 ? rows[0] : null;
+    },
  
     // Update user password
     async updatePassword(userId, hashedPassword) {
@@ -57,6 +79,17 @@ const User = {
             [JSON.stringify(address), userId]
         );
  
+        return result;
+    },
+
+    async updateProfile(userId, { name, email }) {
+        const [result] = await db.query(
+            `UPDATE pa_users
+       SET name = ?, email = ?
+       WHERE user_id = ?`,
+            [name, email, userId]
+        );
+
         return result;
     },
 
